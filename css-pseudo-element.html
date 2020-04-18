@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Elemento</title>
 </head>
+<style>
+    body {
+        background-color: cyan;
+    }
+
+    div {
+        background-color: white;
+        padding: 10px 20px;
+        margin: 10px 20px;
+        border: solid 1px black;
+        border-radius: 2em;
+    }
+    h1::first-letter{
+        color:red;
+        font-style: italic;
+    }
+</style>
 
 <body>
-
+    
+    <div>
+        <h1>Animals</h1>
+        <p>🐶Perro</p>
+        <p>🐱Gato</p>
+        <p>🐭Raton</p>
+        <p>🐯Tigre</p>
+        <p>🐷Cerdo</p>
+        <p>🐢Tortuga</p>
+        <p>🐒Mono</p>
+    </div>
 </body>
 
 </html>
