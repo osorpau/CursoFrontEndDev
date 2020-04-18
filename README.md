@@ -1,1 +1,5 @@
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+### Practicando las clases de front end developer
+ ##### 1.  HTML
+ ##### 2. CSS
+###### - PseudoClass
+###### - PseudoElement
