@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pseudo Elemento</title>
 </head>
 <style>
     /* * es universal*/
@@ -22,9 +22,20 @@
         color: steelblue;
     }
 
-    p:last-child{
+    /*
+        3n cada 3 : n= 1,2.3.....
+        p:nth-child(even or 2n) {  
+        p:nth-child(odd or 2n+1) {
+        p:nth-child(3n) {
+        p:nth-child(-n+3) {
+    */
+    p:nth-child(even) {
+        background-color: chartreuse;
+    }
+
+    p:last-child {
         background-color: springgreen;
-        color:  brown;
+        color: brown;
     }
 </style>
 
