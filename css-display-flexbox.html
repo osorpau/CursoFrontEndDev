@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY FLEXBOX</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .containerRow,
+    .containerRowR,
+    .containerCol,
+    .containerColR {
+        /*para que funcione el padre siempre debe tener la propiedad flex*/
+        display: flex;
+        background-color: cyan;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .containerRow {
+        flex-direction: row;
+    }
+
+    .containerRowR {
+        flex-direction: row-reverse;
+    }
+
+    .containerCol {
+        flex-direction: column;
+    }
+
+    .containerColR {
+        flex-direction: column-reverse;
+    }
+
+    .containerRow div,
+    .containerRowR div,
+    .containerCol div,
+    .containerColR div {
+        width: 100px;
+        height: 100px;
+        border: solid 1px black;
+        box-sizing: border-box;
+    }
+
+    .containerRow div,
+    .containerRowR div {
+        margin-right: 3px;
+    }
+
+    .containerCol div,
+    .containerColR div {
+        margin-bottom: 3px;
+        margin-left: 3px;
+    }
+
+    .containerRow div:first-child {
+        margin-left: 3px;
+    }
+
+    .containerCol div:first-child {
+        margin-top: 3px;
+    }
+
+    .containerColR div:last-child {
+        margin-top: 3px;
+    }
+</style>
+
+<body>
+    <div class="containerRow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="containerRowR">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="containerCol">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="containerColR">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>    
+</body>
+
+</html>
