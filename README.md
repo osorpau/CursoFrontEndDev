@@ -5,13 +5,13 @@
 ###### - PseudoElement
 
 
-🐶Perro
-🐱Gato
-🐭Raton
-🐯Tigre
-🐷Cerdo
-🐢Tortuga
-🐒Mono
+🐶
+🐱
+🐭
+🐯
+🐷
+🐢
+🐒
 
 La arquitectura tiene que ser:
         Predecible
