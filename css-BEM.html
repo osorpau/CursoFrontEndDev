@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BEM</title>
 </head>
+<style>
+    .button {
+        display: inline-block;
+        border-radius: 3px;
+        padding: 7px 12px;
+        border: 1px solid #D5D5D5;
+        background-image: linear-gradient(#EEE, #DDD);
+        font: 700 13px/18px Helvetica, arial;
+    }
+
+    .button--state-success {
+        color: #FFF;
+        background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+        border-color: #4A993E;
+    }
+
+    .button--state-danger {
+        color: #900;
+    }
+</style>
+
 <body>
-    
+    <!-- block element modifier -->
+    <header class="header">
+        <button class="header__button--red">red</button>
+        <button class="header__button--yellow">yellow</button>
+    </header>
+    <section>
+        <button class="button">
+            Normal button
+        </button>
+        <!-- block element modifier -->
+        <button class="button button--state-success">
+            Success button
+        </button>
+        <button class="button button--state-danger">
+            Danger button
+        </button>
+    </section>
 </body>
+
 </html>
