@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Caja</title>
+</head>
+<style>
+    body {
+        /*por defecto viene con margen*/
+        margin: 0;
+    }
+
+    .caja {
+        background-color: cyan;
+        width: 60px;
+        height: 60px;
+        /*hace que la caja crezca*/
+        padding: 10px;
+        /*hace que la caja crezca*/
+        border: solid 5px #0779e4;
+        /*hace que la caja crezca*/
+        margin: 5px 10px 15px 20px;   
+        /*box-sizing: mantiene el tamaño  original de width  y height*/
+        box-sizing: border-box;
+    }
+
+    .caja2 {
+        background-color: #4d4c7d;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        
+    }
+</style>
+
+<body>
+    <div class="caja">
+        HI
+    </div>
+    <div class="caja2">
+        HI
+    </div>
+</body>
+
+</html>
