@@ -6,7 +6,7 @@ body {
 
 .header {
     align-items: center;
-    background-color: #fcbf1e;
+    background-color: #2b580c;
     width: 100%;
     height: 80px;
     color: white;
@@ -67,26 +67,16 @@ body {
     color: white;
 }
 
-/* .input {
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 2px solid white;
-        border-radius: 25px;
-        color: white;
-        font-family: 'Muli', sans-serif;
-        font-size: 16px;
-        height: 50px;
-        padding: 0 20px;
-        width: 70%;
-        outline: none;
-    } */
-
 ::placeholder {
     color: white;
 }
 
 .login {
     /* background: linear-gradient(#21C08B, #AB88FF);     */
-    background: linear-gradient(#fcbf1e, #120136);
+    /* background: linear-gradient(#d8b9c3, #363062); */
+    /* background: linear-gradient(#00a8cc, #142850); */
+    /* background: linear-gradient(#424874, #00a8cc); */
+    background: linear-gradient(#2b580c, #639a67);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,6 +94,9 @@ body {
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .login__container--form {
@@ -132,7 +125,75 @@ body {
     text-decoration: underline;
 }
 
-login__container--social-media > div {
+.login__container--social-media>div {
     display: flex;
     align-items: center;
+}
+
+.login__container--social-media>div>img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register, .login__container--iniciar-sesion {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login__container--register a, .login__container--iniciar-sesion a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login__container--register a:hover, .login__container--iniciar-sesiona:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none;
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #639a67;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
