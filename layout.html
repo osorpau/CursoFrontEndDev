@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" container="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        /* flex-flow: column; */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-size: 16px;
+    }
+
+    .header {
+        outline: 1px solid gold;
+        height: 3rem;
+    }
+
+    .container {
+        display: flex;
+        height: inherit;
+    }
+
+    .content {
+        outline: 1px solid cyan;
+        flex: 1;
+    }
+
+    .aside {
+        outline: 1px solid magenta;
+        flex: 0 0 25%;
+    }
+
+    .footer {
+        outline: 1px solid salmon;
+        height: 6rem;
+        margin-top: auto;
+    }
+
+    .Menu {
+        display: flex;
+    }
+
+    .Menu-item {
+        list-style: none;
+        flex: 1;
+        outline: 1px solid cyan;
+        line-height:3rem ;
+        text-align: center;
+        transition: flex .5s;
+    }
+    .Menu-item:hover {
+        flex: 8;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <ul class="Menu">
+            <li class="Menu-item">Home</li>
+            <li class="Menu-item">Gallery</li>
+            <li class="Menu-item">About</li>
+            <li class="Menu-item">Contact</li>
+        </ul>
+    </header>
+    <section class="container">
+        <section class="content">Content</section>
+        <aside class="aside">Aside</aside>
+    </section>
+    <footer class="footer">Footer</footer>
+</body>
+
+</html>
